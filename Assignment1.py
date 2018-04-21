@@ -6,7 +6,6 @@ Description: A program to use a binary search algorithm to check for a value
 Date: April 20, 2018
 '''
 
-import math
 
 #-- Binary Search Function --#
 def binary_search(list, value):
@@ -20,7 +19,7 @@ def binary_search(list, value):
             if (list[0] == value): return True
             else: return False
 
-        i = math.floor(len(list)/2)  # index for middle entry, floor function to ensure an integer
+        i = int(len(list)/2)  # index for middle entry,
 
         if (list[i] == value): return True #return True if value is found
 
@@ -36,8 +35,8 @@ def binary_search(list, value):
 
 #-- End Function --#
 
-lstUser = [-4.1, -2.25, 0, 2]  #lst to hold user data
-fltSearch = -4.1   #variable for search value
+lstUser = [0,1,2,3,4,]  #lst to hold user data
+fltSearch = 2   #variable for search value
 
 
 #call the search function and print the output
